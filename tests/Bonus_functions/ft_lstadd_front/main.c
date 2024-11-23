@@ -22,8 +22,8 @@ void	ft_print_result(t_list *elem)
 	len = 0;
 	while (((char *)elem->content)[len])
 		len++;
-	write(1, elem->content, len);
-	write(1, "\n", 1);
+	(void)write(1, elem->content, len);
+	(void)write(1, "\n", 1);
 }
 
 t_list	*ft_lstnewone(void *content)

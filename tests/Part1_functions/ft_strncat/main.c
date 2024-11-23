@@ -29,35 +29,35 @@ int		main(int argc, const char *argv[])
 	{
 		dest[8] = 'a';
 		if (dest != ft_strncat(dest, "lorem", 2))
-			write(1,"dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			(void)write(1,"dest's adress was not returned\n", 31);
+		(void)write(1, dest, 15);
 	}
 	else if (arg == 2)
 	{
 		dest[11] = 'a';
 		if (dest != ft_strncat(dest, "lorem", 9))
-			write(1,"dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			(void)write(1,"dest's adress was not returned\n", 31);
+		(void)write(1, dest, 15);
 	}
 	else if (arg == 3)
 	{
 		if (dest != ft_strncat(dest, "", 3))
-			write(1,"dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			(void)write(1,"dest's adress was not returned\n", 31);
+		(void)write(1, dest, 15);
 	}
 	else if (arg == 4)
 	{
 		if (dest != ft_strncat(dest, "lorem ipsum", 0))
-			write(1,"dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			(void)write(1,"dest's adress was not returned\n", 31);
+		(void)write(1, dest, 15);
 	}
 	else if (arg == 5)
 	{
 		dest[0] = '\0';
 		dest[10] = 'a';
 		if (dest != ft_strncat(dest, "lorem ipsum", 10))
-			write(1,"dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			(void)write(1,"dest's adress was not returned\n", 31);
+		(void)write(1, dest, 15);
 	}
 	return (0);
 }

@@ -25,8 +25,8 @@ void	ft_print_result(char *s)
 			s[len] -= 32;
 		len++;
 	}
-	write(1, s, len);
-	write(1, "\n", 1);
+	(void)write(1, s, len);
+	(void)write(1, "\n", 1);
 }
 
 int		main(int argc, const char *argv[])

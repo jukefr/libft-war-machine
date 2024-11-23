@@ -16,7 +16,7 @@
 
 void	ft_print_result2(char c)
 {
-	write(1, &c, 1);
+	(void)write(1, &c, 1);
 }
 
 void	ft_print_result(int n)

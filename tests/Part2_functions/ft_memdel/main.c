@@ -26,9 +26,9 @@ int		main(int argc, const char *argv[])
 	{
 		ft_memdel(&mem);
 		if (!mem)
-			write(1, "NULL", 4);
+			(void)write(1, "NULL", 4);
 		else
-			write(1, "NOT NULL", 8);
+			(void)write(1, "NOT NULL", 8);
 	}
 	return (0);
 }
