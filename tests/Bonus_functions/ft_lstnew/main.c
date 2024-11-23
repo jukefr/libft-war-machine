@@ -21,7 +21,7 @@ void	ft_print_result(char const *s)
 	len = 0;
 	while (s[len])
 		len++;
-	(void)write(1, s, len);
+	write(1, s, len);
 }
 
 void	ft_print_result2(int n)
@@ -58,7 +58,7 @@ int main(int argc, const char *argv[])
 			}
 			if (!(elem->next))
 			{
-				(void)write(1, "\n", 1);
+				write(1, "\n", 1);
 				ft_print_result("NULL");
 			}
 		}
@@ -80,7 +80,7 @@ int main(int argc, const char *argv[])
 			}
 			if (!(elem->next))
 			{
-				(void)write(1, "\n", 1);
+				write(1, "\n", 1);
 				ft_print_result("NULL");
 			}
 		}
@@ -101,7 +101,7 @@ int main(int argc, const char *argv[])
 			}
 			if (!(elem->next))
 			{
-				(void)write(1, "\n", 1);
+				write(1, "\n", 1);
 				ft_print_result("NULL");
 			}
 		}

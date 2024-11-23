@@ -30,7 +30,7 @@ int		main(int argc, const char *argv[])
 		while (i <= 47)
 		{
 			c = ft_toupper(i);
-			(void)write(1, &c, 1);
+			write(1, &c, 1);
 			i++;
 		}
 	}
@@ -40,7 +40,7 @@ int		main(int argc, const char *argv[])
 		while (i <= '9')
 		{
 			c = ft_toupper(i);
-			(void)write(1, &c, 1);
+			write(1, &c, 1);
 			i++;
 		}
 	}
@@ -50,7 +50,7 @@ int		main(int argc, const char *argv[])
 		while (i <= 64)
 		{
 			c = ft_toupper(i);
-			(void)write(1, &c, 1);
+			write(1, &c, 1);
 			i++;
 		}
 	}
@@ -60,7 +60,7 @@ int		main(int argc, const char *argv[])
 		while (i <= 'Z')
 		{
 			c = ft_toupper(i);
-			(void)write(1, &c, 1);
+			write(1, &c, 1);
 			i++;
 		}
 	}
@@ -70,7 +70,7 @@ int		main(int argc, const char *argv[])
 		while (i <= 96)
 		{
 			c = ft_toupper(i);
-			(void)write(1, &c, 1);
+			write(1, &c, 1);
 			i++;
 		}
 	}
@@ -80,7 +80,7 @@ int		main(int argc, const char *argv[])
 		while (i <= 'z')
 		{
 			c = ft_toupper(i);
-			(void)write(1, &c, 1);
+			write(1, &c, 1);
 			i++;
 		}
 	}
@@ -90,7 +90,7 @@ int		main(int argc, const char *argv[])
 		while (i <= 127)
 		{
 			c = ft_toupper(i);
-			(void)write(1, &c, 1);
+			write(1, &c, 1);
 			i++;
 		}
 	}

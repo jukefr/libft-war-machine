@@ -55,16 +55,16 @@ int main(int argc, const char *argv[])
 		elem2->next = elem3;
 		elem3->next = elem4;
 		c = ft_lstsize(elem) + 48;
-		(void)write(1, &c, 1);
-		(void)write(1, "\n", 1);
+		write(1, &c, 1);
+		write(1, "\n", 1);
 		elem->next = NULL;
 		c = ft_lstsize(elem) + 48;
-		(void)write(1, &c, 1);
-		(void)write(1, "\n", 1);
+		write(1, &c, 1);
+		write(1, "\n", 1);
 		elem = NULL;
 		c = ft_lstsize(elem) + 48;
-		(void)write(1, &c, 1);
-		(void)write(1, "\n", 1);
+		write(1, &c, 1);
+		write(1, "\n", 1);
 	}
 	return (0);
 }

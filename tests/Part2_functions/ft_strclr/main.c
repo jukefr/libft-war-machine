@@ -30,7 +30,7 @@ int		main(int argc, const char *argv[])
 		memset(str, 'u', 9);
 		str[9] = '\0';
 		ft_strclr(str);
-		(void)write(1, str, 10);
+		write(1, str, 10);
 	}
 	return (0);
 }

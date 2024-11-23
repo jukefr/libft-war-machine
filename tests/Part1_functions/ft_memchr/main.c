@@ -23,7 +23,7 @@ void	ft_print_result(const char *s)
 	len = 0;
 	while (s[len])
 		len++;
-	(void)write(1, s, len);
+	write(1, s, len);
 }
 
 int		main(int argc, const char *argv[])

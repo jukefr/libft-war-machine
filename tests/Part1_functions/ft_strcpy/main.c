@@ -28,20 +28,20 @@ int		main(int argc, const char *argv[])
 	if ((arg = atoi(argv[1])) == 1)
 	{
 		if (dest != ft_strcpy(dest, "lorem"))
-			(void)write(1, "dest's adress was not returned\n", 31);
-		(void)write(1, dest, 15);
+			write(1, "dest's adress was not returned\n", 31);
+		write(1, dest, 15);
 	}
 	else if (arg == 2)
 	{
 		if (dest != ft_strcpy(dest, "lorem ipsum"))
-			(void)write(1, "dest's adress was not returned\n", 31);
-		(void)write(1, dest, 15);
+			write(1, "dest's adress was not returned\n", 31);
+		write(1, dest, 15);
 	}
 	else if (arg == 3)
 	{
 		if (dest != ft_strcpy(dest, ""))
-			(void)write(1, "dest's adress was not returned\n", 31);
-		(void)write(1, dest, 15);
+			write(1, "dest's adress was not returned\n", 31);
+		write(1, dest, 15);
 	}
 	return (0);
 }

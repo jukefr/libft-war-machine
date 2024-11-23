@@ -25,16 +25,16 @@ int		main(int argc, const char *argv[])
 	else if ((arg = atoi(argv[1])) == 1)
 	{
 		if (!(str = ft_strnew(30)))
-			(void)write(1, "NULL", 4);
+			write(1, "NULL", 4);
 		else
-			(void)write(1, str, 31);
+			write(1, str, 31);
 	}
 	else if (arg == 2)
 	{
 		if (!(str = ft_strnew(0)))
-			(void)write(1, "NULL", 4);
+			write(1, "NULL", 4);
 		else
-			(void)write(1, str, 1);
+			write(1, str, 1);
 	}
 	return (0);
 }

@@ -22,7 +22,7 @@ void	ft_print_result(char const *s)
 	len = 0;
 	while (s[len])
 		len++;
-	(void)write(1, s, len);
+	write(1, s, len);
 }
 
 int		main(int argc, const char *argv[])
@@ -44,7 +44,7 @@ int		main(int argc, const char *argv[])
 		else
 		{
 			ft_print_result(mem);
-			(void)write(1, "\n", 1);
+			write(1, "\n", 1);
 			ft_print_result(membis);
 		}
 	}
@@ -55,7 +55,7 @@ int		main(int argc, const char *argv[])
 		else
 		{
 			ft_print_result(mem);
-			(void)write(1, "\n", 1);
+			write(1, "\n", 1);
 			ft_print_result(membis);
 		}
 	}
@@ -66,7 +66,7 @@ int		main(int argc, const char *argv[])
 		else
 		{
 			ft_print_result(mem);
-			(void)write(1, "\n", 1);
+			write(1, "\n", 1);
 			ft_print_result(membis);
 		}
 	}
@@ -77,7 +77,7 @@ int		main(int argc, const char *argv[])
 		else
 		{
 			ft_print_result(mem);
-			(void)write(1, "\n", 1);
+			write(1, "\n", 1);
 			ft_print_result(membis);
 		}
 	}

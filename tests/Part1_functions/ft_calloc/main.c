@@ -25,9 +25,9 @@ int		main(int argc, const char *argv[])
 	{
 		str = (char *)ft_calloc(30, 1);
 		if (!str)
-			(void)write(1, "NULL", 4);
+			write(1, "NULL", 4);
 		else
-			(void)write(1, str, 30);
+			write(1, str, 30);
 	}
 	return (0);
 }

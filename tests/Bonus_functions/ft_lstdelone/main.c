@@ -18,7 +18,7 @@
 
 void	ft_print_result(t_list *elem)
 {
-	(void)write(1, elem->content, strlen(elem->content));
+	write(1, elem->content, strlen(elem->content));
 }
 
 void	ft_del(void *content)
@@ -68,17 +68,17 @@ int main(int argc, const char *argv[])
 		if (elem)
 			ft_print_result(elem);
 		else
-			(void)write(1, "NULL", 4);
-		(void)write(1, "\n", 1);
+			write(1, "NULL", 4);
+		write(1, "\n", 1);
 		if (elem2)
 			ft_print_result(elem2);
 		else
-			(void)write(1, "NULL", 4);
-		(void)write(1, "\n", 1);
+			write(1, "NULL", 4);
+		write(1, "\n", 1);
 		if (elem4)
 			ft_print_result(elem4);
 		else
-			(void)write(1, "NULL", 4);
+			write(1, "NULL", 4);
 	}
 	return (0);
 }

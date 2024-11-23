@@ -18,11 +18,11 @@
 void	ft_print_result(int n)
 {
 	if (n > 0)
-		(void)write(1, "1", 1);
+		write(1, "1", 1);
 	else if (n < 0)
-		(void)write(1, "-1", 2);
+		write(1, "-1", 2);
 	else
-		(void)write(1, "0", 1);
+		write(1, "0", 1);
 }
 
 int		main(int argc, const char *argv[])

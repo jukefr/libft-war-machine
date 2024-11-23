@@ -60,20 +60,20 @@ int main(int argc, const char *argv[])
 		i = 0;
 		content = val->content;
 		while (content[i])
-			(void)write(1, &(content[i++]), 1);
-		(void)write(1, "\n", 1);
+			write(1, &(content[i++]), 1);
+		write(1, "\n", 1);
 		elem->next = NULL;
 		val = ft_lstlast(elem);
 		content = val->content;
 		i = 0;
 		while (content[i])
-			(void)write(1, &(content[i++]), 1);
-		(void)write(1, "\n", 1);
+			write(1, &(content[i++]), 1);
+		write(1, "\n", 1);
 		elem = NULL;
 		val = ft_lstlast(elem);
 		if (val == NULL)
-			(void)write(1, "NULL", 4);
-		(void)write(1, "\n", 1);
+			write(1, "NULL", 4);
+		write(1, "\n", 1);
 	}
 	return (0);
 }

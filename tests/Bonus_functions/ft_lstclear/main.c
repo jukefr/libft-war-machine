@@ -17,7 +17,7 @@
 
 void	ft_print_result(t_list *elem)
 {
-	(void)write(1, elem->content, strlen(elem->content));
+	write(1, elem->content, strlen(elem->content));
 }
 
 static int	nb_free_done;
@@ -71,26 +71,26 @@ int main(int argc, const char *argv[])
 		if (elem)
 			ft_print_result(elem);
 		else
-			(void)write(1, "NULL", 4);
-		(void)write(1, "\n", 1);
+			write(1, "NULL", 4);
+		write(1, "\n", 1);
 		if (elem2)
 			ft_print_result(elem2);
 		else
-			(void)write(1, "NULL", 4);
-		(void)write(1, "\n", 1);
+			write(1, "NULL", 4);
+		write(1, "\n", 1);
 		if (elem3)
 			ft_print_result(elem3);
 		else
-			(void)write(1, "NULL", 4);
-		(void)write(1, "\n", 1);
+			write(1, "NULL", 4);
+		write(1, "\n", 1);
 		if (elem4)
 		{
-			(void)write(1, "nb_free_done = ", 15);
+			write(1, "nb_free_done = ", 15);
 			nb_free_done += '0';
-			(void)write(1, &nb_free_done, 1);
+			write(1, &nb_free_done, 1);
 		}
 		else
-			(void)write(1, "NULL", 4);
+			write(1, "NULL", 4);
 	}
 	return (0);
 }

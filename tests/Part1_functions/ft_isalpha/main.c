@@ -18,9 +18,9 @@
 void	ft_print_result(int n)
 {
 	if (n)
-		(void)write(1, "1", 1);
+		write(1, "1", 1);
 	else
-		(void)write(1, "0", 1);
+		write(1, "0", 1);
 }
 
 int		main(int argc, const char *argv[])

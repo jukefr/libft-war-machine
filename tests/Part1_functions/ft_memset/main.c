@@ -27,26 +27,26 @@ int		main(int argc, const char *argv[])
 	if ((arg = atoi(argv[1])) == 1)
 	{
 		if (mem != ft_memset(mem, 'c', 5))
-			(void)write(1, "mem's adress was not returned\n", 30);
-		(void)write(1, mem, 15);
+			write(1, "mem's adress was not returned\n", 30);
+		write(1, mem, 15);
 	}
 	else if (arg == 2)
 	{
 		if (mem != ft_memset(mem, 'c', 14))
-			(void)write(1, "mem's adress was not returned\n", 30);
-		(void)write(1, mem, 15);
+			write(1, "mem's adress was not returned\n", 30);
+		write(1, mem, 15);
 	}
 	else if (arg == 3)
 	{
 		if (mem != ft_memset(mem, '\n', 6))
-			(void)write(1, "mem's adress was not returned\n", 30);
-		(void)write(1, mem, 15);
+			write(1, "mem's adress was not returned\n", 30);
+		write(1, mem, 15);
 	}
 	else if (arg == 4)
 	{
 		if (mem != ft_memset(mem, '\0', 1))
-			(void)write(1, "mem's adress was not returned\n", 30);
-		(void)write(1, mem, 15);
+			write(1, "mem's adress was not returned\n", 30);
+		write(1, mem, 15);
 	}
 	return (0);
 }

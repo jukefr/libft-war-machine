@@ -21,7 +21,7 @@ void	ft_print_result(char const *s)
 	len = 0;
 	while (s[len])
 		len++;
-	(void)write(1, s, len);
+	write(1, s, len);
 }
 
 int		main(int argc, const char *argv[])
@@ -43,7 +43,7 @@ int		main(int argc, const char *argv[])
 			while (tabstr[i] != NULL)
 			{
 				ft_print_result(tabstr[i]);
-				(void)write(1, "\n", 1);
+				write(1, "\n", 1);
 				i++;
 			}
 		}
@@ -57,7 +57,7 @@ int		main(int argc, const char *argv[])
 			while (tabstr[i] != NULL)
 			{
 				ft_print_result(tabstr[i]);
-				(void)write(1, "\n", 1);
+				write(1, "\n", 1);
 				i++;
 			}
 		}
@@ -71,7 +71,7 @@ int		main(int argc, const char *argv[])
 			while (tabstr[i] != NULL)
 			{
 				ft_print_result(tabstr[i]);
-				(void)write(1, "\n", 1);
+				write(1, "\n", 1);
 				i++;
 			}
 		}
@@ -85,7 +85,7 @@ int		main(int argc, const char *argv[])
 			while (tabstr[i] != NULL)
 			{
 				ft_print_result(tabstr[i]);
-				(void)write(1, "\n", 1);
+				write(1, "\n", 1);
 				i++;
 			}
 		}
@@ -99,7 +99,7 @@ int		main(int argc, const char *argv[])
 			while (tabstr[i] != NULL)
 			{
 				ft_print_result(tabstr[i]);
-				(void)write(1, "\n", 1);
+				write(1, "\n", 1);
 				i++;
 			}
 		}

@@ -39,64 +39,64 @@ int		main(int argc, const char *argv[])
 	{
 		dest[11] = 'a';
 		ft_print_result(ft_strlcat(dest, "lorem", 15));
-		(void)write(1, "\n", 1);
-		(void)write(1, dest, 15);
+		write(1, "\n", 1);
+		write(1, dest, 15);
 	}
 	else if (arg == 2)
 	{
 		ft_print_result(ft_strlcat(dest, "", 15));
-		(void)write(1, "\n", 1);
-		(void)write(1, dest, 15);
+		write(1, "\n", 1);
+		write(1, dest, 15);
 	}
 	else if (arg == 3)
 	{
 		dest[0] = '\0';
 		dest[11] = 'a';
 		ft_print_result(ft_strlcat(dest, "lorem ipsum", 15));
-		(void)write(1, "\n", 1);
-		(void)write(1, dest, 15);
+		write(1, "\n", 1);
+		write(1, dest, 15);
 	}
 	else if (arg == 4)
 	{
 		dest[14] = 'a';
 		ft_print_result(ft_strlcat(dest, "lorem ipsum dolor sit amet", 15));
-		(void)write(1, "\n", 1);
-		(void)write(1, dest, 15);
+		write(1, "\n", 1);
+		write(1, dest, 15);
 	}
 	else if (arg == 5)
 	{
 		dest[10] = 'a';
 		ft_print_result(ft_strlcat(dest, "lorem ipsum dolor sit amet", 0));
-		(void)write(1, "\n", 1);
-		(void)write(1, dest, 15);
+		write(1, "\n", 1);
+		write(1, dest, 15);
 	}
 	else if (arg == 6)
 	{
 		dest[10] = 'a';
 		ft_print_result(ft_strlcat(dest, "lorem ipsum dolor sit amet", 1));
-		(void)write(1, "\n", 1);
-		(void)write(1, dest, 15);
+		write(1, "\n", 1);
+		write(1, dest, 15);
 	}
 	else if (arg == 7)
 	{
 		memset(dest, 'r', 15);
 		ft_print_result(ft_strlcat(dest, "lorem ipsum dolor sit amet", 5));
-		(void)write(1, "\n", 1);
-		(void)write(1, dest, 15);
+		write(1, "\n", 1);
+		write(1, dest, 15);
 	}
 	else if (arg == 8)
 	{
 		dest[10] = 'a';
 		ft_print_result(ft_strlcat(dest, "lorem ipsum dolor sit amet", 6));
-		(void)write(1, "\n", 1);
-		(void)write(1, dest, 15);
+		write(1, "\n", 1);
+		write(1, dest, 15);
 	}
 	else if (arg == 9)
 	{
 		memset(dest, 'r', 14);
 		ft_print_result(ft_strlcat(dest, "lorem ipsum dolor sit amet", 15));
-		(void)write(1, "\n", 1);
-		(void)write(1, dest, 15);
+		write(1, "\n", 1);
+		write(1, dest, 15);
 	}
 	return (0);
 }

@@ -26,13 +26,13 @@ int		main(int argc, const char *argv[])
 	{
 		memset(mem, 'e', 5);
 		ft_bzero(mem, 5);
-		(void)write(1, mem, 5);
+		write(1, mem, 5);
 	}
 	else if (atoi(argv[1]) == 2)
 	{
 		memset(mem, 'e', 5);
 		ft_bzero(mem, 0);
-		(void)write(1, mem, 5);
+		write(1, mem, 5);
 	}
 	return (0);
 }
