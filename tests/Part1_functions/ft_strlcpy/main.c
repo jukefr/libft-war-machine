@@ -24,7 +24,7 @@ void	ft_print_result(int n)
 	if (n >= 10)
 		ft_print_result(n / 10);
 	c = n % 10 + '0';
-	write (1, &c, 1);
+	fix_write(1, &c, 1);
 }
 
 int		main(int argc, const char *argv[])
