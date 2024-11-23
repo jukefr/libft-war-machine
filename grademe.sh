@@ -208,7 +208,6 @@ init_deepthought()
 	clang --version >> "${PATH_DEEPTHOUGHT}"/deepthought
 }
 
-clear
 init_deepthought
 
 if [ -e "${PATH_LIBFT}/Makefile" ]
