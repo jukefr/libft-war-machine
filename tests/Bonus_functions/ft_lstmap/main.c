@@ -15,6 +15,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include "../../fix_write.c"
 
 void	ft_print_result(t_list *elem)
 {
@@ -23,8 +24,8 @@ void	ft_print_result(t_list *elem)
 	len = 0;
 	while (((char *)elem->content)[len])
 		len++;
-	write(1, ((char *)elem->content), len);
-	write(1, "\n", 1);
+	fix_write(1, ((char *)elem->content), len);
+	fix_write(1, "\n", 1);
 }
 
 t_list	*ft_lstnewone(void *content)
@@ -89,7 +90,7 @@ int main(int argc, const char *argv[])
 		if (!(list = ft_lstmap(elem, &ft_map, &ft_del)))
 			return (0);
 		if (list == elem)
-			write(1, "A new list is not returned\n", 27);
+			fix_write(1, "A new list is not returned\n", 27);
 		ft_print_result(list);
 		while (list->next)
 		{

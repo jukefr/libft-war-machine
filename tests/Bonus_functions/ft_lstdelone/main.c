@@ -15,10 +15,11 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include "../../fix_write.c"
 
 void	ft_print_result(t_list *elem)
 {
-	write(1, elem->content, strlen(elem->content));
+	fix_write(1, elem->content, strlen(elem->content));
 }
 
 void	ft_del(void *content)
@@ -68,17 +69,17 @@ int main(int argc, const char *argv[])
 		if (elem)
 			ft_print_result(elem);
 		else
-			write(1, "NULL", 4);
-		write(1, "\n", 1);
+			fix_write(1, "NULL", 4);
+		fix_write(1, "\n", 1);
 		if (elem2)
 			ft_print_result(elem2);
 		else
-			write(1, "NULL", 4);
-		write(1, "\n", 1);
+			fix_write(1, "NULL", 4);
+		fix_write(1, "\n", 1);
 		if (elem4)
 			ft_print_result(elem4);
 		else
-			write(1, "NULL", 4);
+			fix_write(1, "NULL", 4);
 	}
 	return (0);
 }

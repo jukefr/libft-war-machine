@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <string.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 void	ft_print_result(int n)
 {

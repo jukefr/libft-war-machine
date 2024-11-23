@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <string.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 int		main(int argc, const char *argv[])
 {
@@ -30,7 +31,7 @@ int		main(int argc, const char *argv[])
 		memset(str, 'u', 9);
 		str[9] = '\0';
 		ft_strclr(str);
-		write(1, str, 10);
+		fix_write(1, str, 10);
 	}
 	return (0);
 }

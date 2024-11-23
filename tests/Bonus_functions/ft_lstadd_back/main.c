@@ -14,6 +14,7 @@
 #include "../../../libft.h"
 #include <unistd.h>
 #include <string.h>
+#include "../../fix_write.c"
 
 void	ft_print_result(t_list *elem)
 {
@@ -22,8 +23,8 @@ void	ft_print_result(t_list *elem)
 	len = 0;
 	while (((char *)elem->content)[len])
 		len++;
-	write(1, elem->content, len);
-	write(1, "\n", 1);
+	fix_write(1, elem->content, len);
+	fix_write(1, "\n", 1);
 }
 
 t_list	*ft_lstnewone(void *content)

@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <string.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 void	ft_print_result(char const *s)
 {
@@ -22,7 +23,7 @@ void	ft_print_result(char const *s)
 	len = 0;
 	while (s[len])
 		len++;
-	write(1, s, len);
+	fix_write(1, s, len);
 }
 
 void	iter(unsigned int i, char *c)
@@ -30,7 +31,7 @@ void	iter(unsigned int i, char *c)
 	static int indexArray[11] = {0};
 
 	if (i > 10 || indexArray[i] == 1)
-		write(1, "wrong index\n", 12);
+		fix_write(1, "wrong index\n", 12);
 	else
 		indexArray[i] = 1;
 	if (*c >= 'a' && *c <= 'z')

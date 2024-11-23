@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <string.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 int		main(int argc, const char *argv[])
 {
@@ -28,43 +29,43 @@ int		main(int argc, const char *argv[])
 	{
 		memset(dest, 's', 13);
 		if (dest != ft_strncpy(dest, "lorem", 6))
-			write(1, "dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			fix_write(1, "dest's adress was not returned\n", 31);
+		fix_write(1, dest, 15);
 	}
 	else if (arg == 2)
 	{
 		memset(dest, 's', 13);
 		if (dest != ft_strncpy(dest, "lorem", 8))
-			write(1, "dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			fix_write(1, "dest's adress was not returned\n", 31);
+		fix_write(1, dest, 15);
 	}
 	else if (arg == 3)
 	{
 		memset(dest, 's', 13);
 		if (dest != ft_strncpy(dest, "", 3))
-			write(1, "dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			fix_write(1, "dest's adress was not returned\n", 31);
+		fix_write(1, dest, 15);
 	}
 	else if (arg == 4)
 	{
 		memset(dest, 's', 13);
 		if (dest != ft_strncpy(dest, "lorem ipsum", 3))
-			write(1, "dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			fix_write(1, "dest's adress was not returned\n", 31);
+		fix_write(1, dest, 15);
 	}
 	else if (arg == 5)
 	{
 		memset(dest, 's', 13);
 		if (dest != ft_strncpy(dest, "lorem ipsum", 0))
-			write(1, "dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			fix_write(1, "dest's adress was not returned\n", 31);
+		fix_write(1, dest, 15);
 	}
 	else if (arg == 6)
 	{
 		memset(dest, 's', 5);
 		if (dest != ft_strncpy(dest, "lorem ipsum", 10))
-			write(1, "dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			fix_write(1, "dest's adress was not returned\n", 31);
+		fix_write(1, dest, 15);
 	}
 	return (0);
 }

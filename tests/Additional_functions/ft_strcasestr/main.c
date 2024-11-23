@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 void	ft_print_result(char const *s)
 {
@@ -9,7 +10,7 @@ void	ft_print_result(char const *s)
 	len = 0;
 	while (s[len])
 		len++;
-	write(1, s, len);
+	fix_write(1, s, len);
 }
 
 int		main(int argc, const char *argv[])

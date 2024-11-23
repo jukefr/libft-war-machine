@@ -6,13 +6,14 @@
 /*   By: jtoty <jtoty@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/28 12:35:18 by jtoty             #+#    #+#             */
-/*   Updated: 2021/11/10 14:58:30 by ocartier         ###   ########.fr       */
+/*   Updated: 2024/11/23 02:14:41 by kjullien         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <unistd.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 void	ft_print_result(char const *s)
 {
@@ -21,7 +22,7 @@ void	ft_print_result(char const *s)
 	len = 0;
 	while (s[len])
 		len++;
-	write(1, s, len);
+	fix_write(1, s, len);
 }
 
 int		main(int argc, const char *argv[])

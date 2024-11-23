@@ -13,13 +13,14 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 void	ft_print_result(int n)
 {
 	if (n)
-		write(1, "1", 1);
+		fix_write(1, "1", 1);
 	else
-		write(1, "0", 1);
+		fix_write(1, "0", 1);
 }
 
 int		main(int argc, const char *argv[])

@@ -13,10 +13,11 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 void	ft_print_result2(char c)
 {
-	write(1, &c, 1);
+	fix_write(1, &c, 1);
 }
 
 void	ft_print_result(int n)

@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 int		main(int argc, const char *argv[])
 {

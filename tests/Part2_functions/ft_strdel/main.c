@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 int		main(int argc, const char *argv[])
 {
@@ -26,9 +27,9 @@ int		main(int argc, const char *argv[])
 	{
 		ft_strdel(&str);
 		if (!str)
-			write(1, "NULL", 4);
+			fix_write(1, "NULL", 4);
 		else
-			write(1, "NOT NULL", 8);
+			fix_write(1, "NOT NULL", 8);
 	}
 	return (0);
 }

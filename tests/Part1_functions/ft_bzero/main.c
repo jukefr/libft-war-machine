@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <string.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 int		main(int argc, const char *argv[])
 {
@@ -26,13 +27,13 @@ int		main(int argc, const char *argv[])
 	{
 		memset(mem, 'e', 5);
 		ft_bzero(mem, 5);
-		write(1, mem, 5);
+		fix_write(1, mem, 5);
 	}
 	else if (atoi(argv[1]) == 2)
 	{
 		memset(mem, 'e', 5);
 		ft_bzero(mem, 0);
-		write(1, mem, 5);
+		fix_write(1, mem, 5);
 	}
 	return (0);
 }

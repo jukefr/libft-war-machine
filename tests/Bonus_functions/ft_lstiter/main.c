@@ -15,6 +15,7 @@
 #include "../../../libft.h"
 #include <string.h>
 #include <stdio.h>
+#include "../../fix_write.c"
 
 void	ft_modify_list_with_d(void *elem)
 {
@@ -38,8 +39,8 @@ void	ft_print_result(t_list *elem)
 		len = 0;
 		while (((char *)elem->content)[len])
 			len++;
-		write(1, elem->content, len);
-		write(1, "\n", 1);
+		fix_write(1, elem->content, len);
+		fix_write(1, "\n", 1);
 		elem = elem->next;
 	}
 }

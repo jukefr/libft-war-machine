@@ -15,6 +15,7 @@
 #include <string.h>
 #include "../../../libft.h"
 #include <stdio.h>
+#include "../../fix_write.c"
 
 void	ft_print_result(const char *s)
 {
@@ -23,7 +24,7 @@ void	ft_print_result(const char *s)
 	len = 0;
 	while (s[len])
 		len++;
-	write(1, s, len);
+	fix_write(1, s, len);
 }
 
 int		main(int argc, const char *argv[])

@@ -14,6 +14,7 @@
 #include "../../../libft.h"
 #include <unistd.h>
 #include <string.h>
+#include "../../fix_write.c"
 
 t_list	*ft_lstnewone(void *content)
 {
@@ -60,20 +61,20 @@ int main(int argc, const char *argv[])
 		i = 0;
 		content = val->content;
 		while (content[i])
-			write(1, &(content[i++]), 1);
-		write(1, "\n", 1);
+			fix_write(1, &(content[i++]), 1);
+		fix_write(1, "\n", 1);
 		elem->next = NULL;
 		val = ft_lstlast(elem);
 		content = val->content;
 		i = 0;
 		while (content[i])
-			write(1, &(content[i++]), 1);
-		write(1, "\n", 1);
+			fix_write(1, &(content[i++]), 1);
+		fix_write(1, "\n", 1);
 		elem = NULL;
 		val = ft_lstlast(elem);
 		if (val == NULL)
-			write(1, "NULL", 4);
-		write(1, "\n", 1);
+			fix_write(1, "NULL", 4);
+		fix_write(1, "\n", 1);
 	}
 	return (0);
 }

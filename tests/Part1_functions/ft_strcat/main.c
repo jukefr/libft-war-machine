@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <string.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 int		main(int argc, const char *argv[])
 {
@@ -29,22 +30,22 @@ int		main(int argc, const char *argv[])
 	{
 		dest[11] = 'a';
 		if (dest != ft_strcat(dest, "lorem"))
-			write(1, "dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			fix_write(1, "dest's adress was not returned\n", 31);
+		fix_write(1, dest, 15);
 	}
 	else if (arg == 2)
 	{
 		if (dest != ft_strcat(dest, ""))
-			write(1, "dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			fix_write(1, "dest's adress was not returned\n", 31);
+		fix_write(1, dest, 15);
 	}
 	else if (arg == 3)
 	{
 		dest[0] = '\0';
 		dest[11] = 'a';
 		if (dest != ft_strcat(dest, "lorem ipsum"))
-			write(1, "dest's adress was not returned\n", 31);
-		write(1, dest, 15);
+			fix_write(1, "dest's adress was not returned\n", 31);
+		fix_write(1, dest, 15);
 	}
 	return (0);
 }

@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "../../../libft.h"
+#include "../../fix_write.c"
 
 void	ft_print_result(char *s)
 {
@@ -25,8 +26,8 @@ void	ft_print_result(char *s)
 			s[len] -= 32;
 		len++;
 	}
-	write(1, s, len);
-	write(1, "\n", 1);
+	fix_write(1, s, len);
+	fix_write(1, "\n", 1);
 }
 
 int		main(int argc, const char *argv[])
