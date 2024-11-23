@@ -127,5 +127,5 @@ done
 part=Bonus_func
 for value in $3
 do
-	execute_test "ft_$value.c"
+	execute_test "ft_${value}_bonus.c"
 done
